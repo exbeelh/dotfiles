@@ -1,0 +1,24 @@
+{
+    "workspace.library": [
+        "/home/iam/.config/nvim",
+        "/etc/xdg/nvim",
+        "/home/iam/.local/share/nvim/site",
+        "/home/iam/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+        "/home/iam/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+        "/home/iam/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
+        "/home/iam/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+        "/home/iam/.local/share/nvim/site/pack/packer/start/packer.nvim",
+        "/usr/share/nvim/runtime",
+        "/usr/share/nvim/runtime/pack/dist/opt/matchit",
+        "/usr/lib/nvim",
+        "/home/iam/.config/nvim/after",
+        "${3rd}/luassert/library",
+        "${3rd}/OpenResty/library"
+    ],
+    "runtime.version": "LuaJIT",
+    "diagnostics.globals": [
+        "vim",
+        "ngx"
+    ],
+    "workspace.checkThirdParty": false
+}
