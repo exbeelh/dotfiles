@@ -1,78 +1,12 @@
-configuration {
-  display-drun: "Spawn:";
-  display-window: "Windows:";
-  drun-display-format: "{name}";
-  font: "Cantarell Bold 10";
+configuration{
+    modi: "run,drun,window";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
 }
 
-@theme "/dev/null"
-
-* {
-  bg: #282c34;
-  bg-alt: #61afef;
-
-  fg: #FFFFFF;
-  fg-alt: #787c99;
-
-  background-color: @bg;
-  
-  border: 0;
-  margin: 0;
-  padding: 0;
-  spacing: 0;
-}
-
-window {
-  anchor: northwest;
-  location: northwest;
-  width: 70%;
-  children: [horibox];
-}
-
-horibox {
-    orientation: horizontal;
-    children: [prompt, entry, listview];
-}
-
-element {
-  padding: 0 2;
-  text-color: @fg-alt;
-}
-
-element selected {
-  text-color: @bg-alt;
-}
-
-element-text {
-  text-color: inherit;
-  vertical-align: 0.5;
-}
-
-entry {
-  background-color: @bg-alt;
-  text-color: @fg;
-  padding: 3px;
-  width: 9em;
-  expand: false;
-}
-
-listview {
-  layout: horizontal;
-  background-color: @bg;
-  spacing: 10px;
-  lines: 10;
-  padding: 2px 0 0 5px;
-}
-
-mainbox {
-  background-color: @bg;
-  children: [inputbar, listview];
-}
-
-prompt {
-  background-color: @bg-alt;
-  enabled: true;
-  text-color: @fg;
-  padding: 2px 0px 0px 4px;
-}
-
+@theme "catppuccin-mocha"
