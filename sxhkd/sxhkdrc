@@ -33,6 +33,10 @@ XF86MonBrightness{Up,Down}
 super + e
 	kitty -e ranger
 
+# open wifi menu
+super + shift + ctrl + n
+	~/.config/rofi/scripts/wifimenu
+
 #
 # bspwm hotkeys
 #
@@ -42,7 +46,7 @@ super + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-super + w
+super + shift + w
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
