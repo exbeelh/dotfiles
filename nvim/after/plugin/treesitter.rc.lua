@@ -3,11 +3,11 @@ if (not status) then return end
 
 ts.setup {
   highlight = {
-    enbale = true,
+    enable = true,
     disable = {},
   },
   indent = {
-    enbale = true,
+    enable = true,
     disbale = {},
   },
   ensure_installed = {
