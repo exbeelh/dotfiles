@@ -8,7 +8,7 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use 'navarasu/onedark.nvim'
   use 'L3MON4D3/LuaSnip'
   use({
     "glepnir/lspsaga.nvim",
